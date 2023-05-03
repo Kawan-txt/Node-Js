@@ -1,0 +1,10 @@
+<h1>Lista de Eventos: </h1>
+
+{{#each posts}}
+    <p>{{dataValues.Evento}}</p>
+    <p>{{dataValues.Conteudo}}</p>
+    <a href="/deletar/{{dataValues.id}}">
+        <button>Deletar</button>
+    </a>
+    <hr>
+{{/each}}
